@@ -36,7 +36,7 @@ import com.toedter.calendar.JCalendar;
 
 public class CreareZbor {
 
-
+	String diferenta;
 	ArrayList<Utilizator> utilizatori = VariabileGlobale.getUtilizatori();
 		
 	JFrame frame = new JFrame();
