@@ -1,0 +1,16 @@
+UserName/Parola/Sold
+JohnDoe/Parola123/4600.0
+AliceSmith456/SecurePass456/6120.0
+RobertJohnson/RandomPass789/1440.0
+EmilyDavis/SecretCode321/1640.0
+DavidMiller/PassWord789/1200.0
+LauraTaylor/Secure123/3000.0
+MichaelBrown/RandomPass567/2000.0
+OliviaJones/DemoPass123/2000.0
+DanielClark/WelcomePass456/1600.0
+SophiaLee/GammaDelta789/3000.0
+AlexWhite/DoubleOSeven/4000.0
+NatalieBaker/SummerTime123/1920.0
+ChristopherYoung/Cloud9Pass/2160.0
+MeganWoods/Silver123/1520.0
+AndrewReid/Rainbow456/2760.0

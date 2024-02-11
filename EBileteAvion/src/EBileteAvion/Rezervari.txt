@@ -1,0 +1,1 @@
+Nume/Prenume/OrasPlecare/OrasDestinatie/DataPlecare/DataIntoarcere/PretBilet/CodRezervare/TipBilet/Email/MetodaPlata
