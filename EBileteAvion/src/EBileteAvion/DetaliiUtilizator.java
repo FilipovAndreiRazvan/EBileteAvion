@@ -30,7 +30,7 @@ import com.toedter.calendar.JCalendar;
 
 public class DetaliiUtilizator {
 
-	
+		String sex;
 		JLabel titlu = new JLabel("Introduceti urmatoaarele informatii!");
 		JLabel Nume = new JLabel("Nume:");
 		JLabel Prenume = new JLabel("Prenume:");
