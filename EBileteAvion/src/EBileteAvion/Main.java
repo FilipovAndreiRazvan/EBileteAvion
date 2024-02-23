@@ -322,7 +322,7 @@ public class Main {
 	            FileWriter fileWriter = new FileWriter(numeFisier2);
 
 	            BufferedWriter writer = new BufferedWriter(fileWriter);
-	            writer.write("OrasPlecare/OrasDestinatie/DataPlecare/DataIntoarcere/Piloti/Insotitori/Escale/NrLocCls1/NrLocCls2/NrLocCls3/PretBilet/Status(Diponibil?)");
+	            writer.write("OrasPlecare/OrasDestinatie/DataPlecare/DataIntoarcere/Piloti/Insotitori/Escale/NrLocCls1/NrLocCls2/NrLocCls3/PretBilet/Status(Diponibil?)/CodZbor");
 	            	
 	            for(int i= 0;i<lista.size();i++) 
 	            	{

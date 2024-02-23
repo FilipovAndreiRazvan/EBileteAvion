@@ -1,4 +1,4 @@
-OrasPlecare/OrasDestinatie/DataPlecare/DataIntoarcere/Piloti/Insotitori/Escale/NrLocCls1/NrLocCls2/NrLocCls3/PretBilet/Status(Diponibil?)
+OrasPlecare/OrasDestinatie/DataPlecare/DataIntoarcere/Piloti/Insotitori/Escale/NrLocCls1/NrLocCls2/NrLocCls3/PretBilet/Status(Diponibil?)/CodZbor
 Berlin/Dublin/28-02-2024/29-02-2024/Andrei Daniel/Gabriela Daniela/-/30/45/50/200.0/true/4571
 Stockholm/Paris/12-03-2024/15-03-2024/Ștefan Bogdan/Maria Alina/-/20/30/40/350.0/true/7431
 Bruxelles/Dublin/21-02-2024/28-02-2024/Cristian Eduard/Cristina Ioana/-/25/35/40/400.0/false/1375
