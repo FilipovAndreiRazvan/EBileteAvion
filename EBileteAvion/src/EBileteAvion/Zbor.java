@@ -2,6 +2,7 @@ package EBileteAvion;
 public class Zbor {
   private  String orasPlecare,orasDestinatie,dataPlecare, dataIntoarcere;
   private String piloti, insotitori,escale;
+  private int cod;
   private int[] nrLocuri = new int[3];
   private float pret;
   private boolean zborDeschis;
@@ -67,6 +68,15 @@ public class Zbor {
 	public String getEscale()
 	{
 		return escale;
+	}
+	
+	public void setCod(int varCod)
+	{
+		cod = varCod;
+	}
+	public int getCod()
+	{
+		return cod;
 	}
 	
 	public void setNrLocuri(int cls1,int cls2,int cls3)

@@ -1,8 +1,8 @@
 OrasPlecare/OrasDestinatie/DataPlecare/DataIntoarcere/Piloti/Insotitori/Escale/NrLocCls1/NrLocCls2/NrLocCls3/PretBilet/Status(Diponibil?)
-Berlin/Dublin/28-02-2024/29-02-2024/Andrei Daniel/Gabriela Daniela/-/30/45/50/200.0/true
-Stockholm/Paris/12-03-2024/15-03-2024/Ștefan Bogdan/Maria Alina/-/20/30/40/350.0/true
-Bruxelles/Dublin/21-02-2024/28-02-2024/Cristian Eduard/Cristina Ioana/-/25/35/40/400.0/true
-Berlin/Viena/28-02-2024/29-02-2024/Florin Răzvan/Ana Simona/-/30/35/40/320.0/true
-București/Amsterdam/10-02-2024/12-02-2024/Andrei Răzvan/Diana Roxana/-/35/40/45/400.0/false
-Londra/Bratislava/08-05-2024/23-05-2024/Cosmin Daniel/Daniela Maria/-/30/40/45/350.0/false
-București/Bruxelles/29-02-2024/14-03-2024/Bogdan Daniel/Andreea Daniela/-/30/45/50/250.0/true
+Berlin/Dublin/28-02-2024/29-02-2024/Andrei Daniel/Gabriela Daniela/-/30/45/50/200.0/true/4571
+Stockholm/Paris/12-03-2024/15-03-2024/Ștefan Bogdan/Maria Alina/-/20/30/40/350.0/true/7431
+Bruxelles/Dublin/21-02-2024/28-02-2024/Cristian Eduard/Cristina Ioana/-/25/35/40/400.0/false/1375
+Berlin/Viena/28-02-2024/29-02-2024/Florin Răzvan/Ana Simona/-/30/35/40/320.0/true/9517
+București/Amsterdam/10-02-2024/12-02-2024/Andrei Răzvan/Diana Roxana/-/35/40/45/400.0/false/4713
+Londra/Bratislava/08-05-2024/23-05-2024/Cosmin Daniel/Daniela Maria/-/30/40/45/350.0/false/4284
+București/Bruxelles/29-02-2024/14-03-2024/Bogdan Daniel/Andreea Daniela/-/30/45/50/250.0/true/7621

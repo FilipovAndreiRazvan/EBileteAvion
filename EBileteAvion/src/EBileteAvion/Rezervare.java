@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 public class Rezervare extends Zbor {
 
 	private  String nume,prenume,Email,metodaPlata;
-	private int codRezervare,tipBilet;
+	private int tipBilet;
 	
 	public void setNume(String varNume)
 	{
@@ -108,11 +108,11 @@ public class Rezervare extends Zbor {
 	
 	public void setCodRezervare(int varCodRezervare)
 	{
-		codRezervare = varCodRezervare;
+		super.setCod(varCodRezervare);
 	}
 	public int getCodRezervare()
 	{
-		return codRezervare;
+		return super.getCod();
 	}
 	
 	public void setTipBilet(int varTipBilet)

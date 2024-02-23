@@ -330,7 +330,7 @@ public class Main {
 	            	"\n"+lista.get(i).getOrasPlecare()+"/"+lista.get(i).getOrasDestinatie()+"/"
 	            	+lista.get(i).getDataPlecare()+"/"+lista.get(i).getDataIntoarcere()+"/"+lista.get(i).getPiloti()+"/"+lista.get(i).getInsotitori()+"/"+
 	            	lista.get(i).getEscale()+"/"+lista.get(i).getNrLocuri()[0]+"/"+lista.get(i).getNrLocuri()[1]+"/"+lista.get(i).getNrLocuri()[2]+"/"+lista.get(i).getPret()+"/"+
-	            	lista.get(i).getZborDeschis());
+	            	lista.get(i).getZborDeschis()+"/"+lista.get(i).getCod());
 	            	}
 	            
 	            writer.close();

@@ -47,7 +47,7 @@ public class SalvareDate {
 	            	+listaZboruri.get(i).getPiloti()+"/"+listaZboruri.get(i).getInsotitori()+"/"
 	            	+listaZboruri.get(i).getEscale()+"/"+listaZboruri.get(i).getNrLocuri()[0]+"/"
 	            	+listaZboruri.get(i).getNrLocuri()[1]+"/"+listaZboruri.get(i).getNrLocuri()[2]+"/"
-	            	+listaZboruri.get(i).getPret()+"/"+listaZboruri.get(i).getZborDeschis());
+	            	+listaZboruri.get(i).getPret()+"/"+listaZboruri.get(i).getZborDeschis()+"/"+listaZboruri.get(i).getCod());
 	            	}
 
 	            bufferedWriter.close();

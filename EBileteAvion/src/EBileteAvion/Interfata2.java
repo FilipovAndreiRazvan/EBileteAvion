@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
  public class Interfata2  implements ActionListener{
 
 		JLabel label1 = new JLabel("Zboruri Disponibile");
-		JLabel label2 = new JLabel("Introduceti numarul zborului:");
+		JLabel label2 = new JLabel("Introduceti codul zborului:");
 		
 		JFrame frame = new JFrame();
 		JTextField  nrZborTxt=new JTextField(10);
@@ -76,24 +76,37 @@ import javax.swing.table.DefaultTableModel;
 		}
 		
 		public void actionPerformed(ActionEvent e) {
-			int nrZbor = Integer.parseInt(nrZborTxt.getText());
-			
-			if(VariabileGlobale.getActiune() == "rezerva") 
+			int codZbor = Integer.parseInt(nrZborTxt.getText());
+			int index = 0,zborGasit = 0;
+			for(int i = 0;i < VariabileGlobale.getListaZboruriDisponibile().size();i++)
 			{
-		    	new Interfata3(nrZbor);
+				if(VariabileGlobale.getListaZboruriDisponibile().get(i).getCod() == codZbor)
+				{
+					index = i;
+					zborGasit = 1;
+				}
+			}
+			if(zborGasit == 0)
+			{
+				JOptionPane.showMessageDialog(null,"Nu am gasit niciun zbor cu codul de rezervare "+codZbor);
 			}
 			else
 			{
-				int index = nrZbor-1;
-					
-				VariabileGlobale.getRezervare(true).setNume(VariabileGlobale.getRezervare(false).getNume());
-				VariabileGlobale.getRezervare(true).setPrenume(VariabileGlobale.getRezervare(false).getPrenume());
-				VariabileGlobale.getRezervare(true).setDataPlecare(VariabileGlobale.getListaZboruriDisponibile().get(index).getDataPlecare());
-				VariabileGlobale.getRezervare(true).setDataIntoarcere(VariabileGlobale.getListaZboruriDisponibile().get(index).getDataIntoarcere());
-				
-				new Interfata3(index);
+				if(VariabileGlobale.getActiune() == "rezerva") 
+				{
+					new Interfata3(index);		    	
+				}
+				else
+				{
+					VariabileGlobale.getRezervare(true).setNume(VariabileGlobale.getRezervare(false).getNume());
+					VariabileGlobale.getRezervare(true).setPrenume(VariabileGlobale.getRezervare(false).getPrenume());
+					VariabileGlobale.getRezervare(true).setDataPlecare(VariabileGlobale.getListaZboruriDisponibile().get(index).getDataPlecare());
+					VariabileGlobale.getRezervare(true).setDataIntoarcere(VariabileGlobale.getListaZboruriDisponibile().get(index).getDataIntoarcere());
+					new Interfata3(index);
+					frame.setVisible(false);
+				}
 			}
-			frame.setVisible(false);
+			
 		}
 		
 		
@@ -102,21 +115,22 @@ import javax.swing.table.DefaultTableModel;
 
 		Object[][] h = {};
 		JTable tabel = new JTable(new DefaultTableModel(h,new Object[]{
-				"Nr Zbor","OrasPlecare","OrasDestinatie","DataPlecare","DataIntoarcere","Piloti","Insotitori","Escale"
+				"Nr Zbor","OrasPlecare","OrasDestinatie","DataPlecare","DataIntoarcere","Piloti","Insotitori","Escale","Cod Zbor"
 		}));
 		
 		DefaultTableModel model = (DefaultTableModel) tabel.getModel();
 		ArrayList<Zbor> listaZboruri = InformatiiZboruri.getListaZboruriDisponibile();
 		
-		var data = new Object[8];
-		int indexZbor=0;
+		var data = new Object[9];
+		int index = 0 ;
 		for(int j = 0;j < listaZboruri.size();j++){
 			if(dataPlecare != "" && dataIntoarcere != "") {
 			if(listaZboruri.get(j).getOrasPlecare().equalsIgnoreCase(orasPlecare) && listaZboruri.get(j).getOrasDestinatie().equalsIgnoreCase(orasDestinatie) 
 					&& listaZboruri.get(j).getDataPlecare().equalsIgnoreCase(dataPlecare) && 
 					listaZboruri.get(j).getDataIntoarcere().equalsIgnoreCase(dataIntoarcere)) 
 				{
-					data[0] = j;
+					index++;
+					data[0] = index;
 					data[1] = listaZboruri.get(j).getOrasPlecare();	
 					data[2] = listaZboruri.get(j).getOrasDestinatie();	
 					data[3] = listaZboruri.get(j).getDataPlecare();
@@ -124,12 +138,14 @@ import javax.swing.table.DefaultTableModel;
 					data[5] = listaZboruri.get(j).getPiloti();
 					data[6] = listaZboruri.get(j).getInsotitori();
 					data[7] = listaZboruri.get(j).getEscale();
+					data[8] = listaZboruri.get(j).getCod();
 					model.addRow(data);
 				}
 			}
 			else if(listaZboruri.get(j).getOrasPlecare().equalsIgnoreCase(orasPlecare) && listaZboruri.get(j).getOrasDestinatie().equalsIgnoreCase(orasDestinatie))
 			{
-				data[0] = j+1;
+				index++;
+				data[0] = index;
 				data[1] = listaZboruri.get(j).getOrasPlecare();	
 				data[2] = listaZboruri.get(j).getOrasDestinatie();	
 				data[3] = listaZboruri.get(j).getDataPlecare();
@@ -137,6 +153,7 @@ import javax.swing.table.DefaultTableModel;
 				data[5] = listaZboruri.get(j).getPiloti();
 				data[6] = listaZboruri.get(j).getInsotitori();
 				data[7] = listaZboruri.get(j).getEscale();
+				data[8] = listaZboruri.get(j).getCod();
 				model.addRow(data);
 			}
 		}

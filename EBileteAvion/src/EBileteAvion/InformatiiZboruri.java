@@ -49,6 +49,7 @@ public static  ArrayList<Zbor> getListaZboruriDisponibile(){  //Creare lista zbo
 				   zbor.setNrLocuri(Integer.parseInt(separator[7]), Integer.parseInt(separator[8]), Integer.parseInt(separator[9]));
 				   zbor.setPret(Float.parseFloat(separator[10]));
 				   zbor.setZborDeschis(Boolean.parseBoolean(separator[11]));
+				   zbor.setCod(Integer.parseInt(separator[12]));
 			   }
 			   else
 			   {
@@ -91,6 +92,7 @@ public static  ArrayList<Zbor> getListaCompletaZboruri(){  //Creare lista zborur
 				 cursa.setNrLocuri(Integer.parseInt(separator[7]), Integer.parseInt(separator[8]), Integer.parseInt(separator[9]));
 				 cursa.setPret(Float.parseFloat(separator[10]));
 				 cursa.setZborDeschis(Boolean.parseBoolean(separator[11]));
+				 cursa.setCod(Integer.parseInt(separator[12]));
 				 
 				 listaZboruri.add(cursa);
 		   }

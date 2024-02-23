@@ -1,7 +1,7 @@
 UserName/Parola/Sold
 JohnDoe/Parola123/4600.0
 AliceSmith456/SecurePass456/6120.0
-RobertJohnson/RandomPass789/1440.0
+RobertJohnson/RandomPass789/800.0
 EmilyDavis/SecretCode321/1640.0
 DavidMiller/PassWord789/1200.0
 LauraTaylor/Secure123/3000.0

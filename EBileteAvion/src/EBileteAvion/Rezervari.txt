@@ -1,1 +1,2 @@
 Nume/Prenume/OrasPlecare/OrasDestinatie/DataPlecare/DataIntoarcere/PretBilet/CodRezervare/TipBilet/Email/MetodaPlata
+Filipov/Andrei/Berlin/Viena/28-02-2024/29-02-2024/640.0/882/1/filipovandreirazvan@gmail.com/abonament-2

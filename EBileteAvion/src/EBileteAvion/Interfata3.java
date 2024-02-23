@@ -22,7 +22,6 @@ public class Interfata3  {
 	   
 	    int numarZbor = nrZbor;
 	    
-	   
 	   JLabel label1 = new JLabel("Bilete Disponibile");
 	   
 	   JButton cardBtn = new JButton("Card Bancar");
