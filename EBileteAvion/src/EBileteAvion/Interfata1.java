@@ -173,9 +173,6 @@ import com.toedter.calendar.JCalendar;
 					"\nOras de destinatie:"+orasDestinatie1+
 					"\nData de plecare:"+dataPlecare+
 					"\nData de intoarcere:"+dataIntoarcere);
-				
-				frame.setVisible(false);
-				Main.initializare();
 			}
 		
 		}

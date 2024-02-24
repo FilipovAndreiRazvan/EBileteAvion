@@ -6,3 +6,5 @@ Berlin/Viena/28-02-2024/29-02-2024/Florin Răzvan/Ana Simona/-/30/35/40/320.0/tr
 București/Amsterdam/10-02-2024/12-02-2024/Andrei Răzvan/Diana Roxana/-/35/40/45/400.0/false/4713
 Londra/Bratislava/08-05-2024/23-05-2024/Cosmin Daniel/Daniela Maria/-/30/40/45/350.0/false/4284
 București/Bruxelles/29-02-2024/14-03-2024/Bogdan Daniel/Andreea Daniela/-/30/45/50/250.0/true/7621
+Bratislava/București/27-02-2024/29-02-2024/Mihai Răzvan/Roxana Simona/-/35/40/50/400.0/true/6063
+Oslo/Londra/25-02-2024/27-02-2024/Alexandru Răzvan/Maria Laura/-/35/45/55/450.0/true/6833

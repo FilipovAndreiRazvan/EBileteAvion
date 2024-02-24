@@ -20,6 +20,7 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Random;
 
 import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
@@ -231,12 +232,14 @@ public class CreareZbor {
 				zborCreat.setNrLocuri(Integer.parseInt(textField10.getText()),Integer.parseInt(textField11.getText()),Integer.parseInt(textField12.getText()));
 				zborCreat.setPret(Float.parseFloat(textField13.getText()));
 				zborCreat.setZborDeschis(true);
-				
+				Random random = new Random();
+				int codZbor =  random.nextInt(1000,10000);
+				zborCreat.setCod(codZbor);
 				    
 			      try (BufferedWriter scriere = new BufferedWriter(new FileWriter(numeFisier,true)))
 					 {
-			    	  scriere.write("\n"+orasPlecare.getSelectedItem()+","+orasDestinatie.getSelectedItem()+","+textField3.getText()+","+textField4.getText()+","+pilot1.getSelectedItem()+" "+pilot2.getSelectedItem()+","+insotitor1.getSelectedItem()+
-			    	  " "+insotitor2.getSelectedItem()+","+textField9.getText()+","+textField10.getText()+","+textField11.getText()+","+textField12.getText()+","+textField13.getText()+","+"true"
+			    	  scriere.write("\n"+orasPlecare.getSelectedItem()+"/"+orasDestinatie.getSelectedItem()+"/"+textField3.getText()+"/"+textField4.getText()+"/"+pilot1.getSelectedItem()+" "+pilot2.getSelectedItem()+"/"+insotitor1.getSelectedItem()+
+			    	  " "+insotitor2.getSelectedItem()+"/"+textField9.getText()+"/"+textField10.getText()+"/"+textField11.getText()+"/"+textField12.getText()+"/"+textField13.getText()+"/"+"true"+"/"+zborCreat.getCod()
 			    			  );
 					 scriere.close();
 					 }
